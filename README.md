@@ -1,4 +1,4 @@
-# ChatGPT Fruit Information Query
+# ChatGPT fruit information identification
 
 這是一個用於與 OpenAI 的 ChatGPT 模型進行對話的簡單 Python 函數範例。該函數會向 ChatGPT 發送一個有關水果的問題並打印回答。
 
