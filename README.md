@@ -26,7 +26,7 @@ In essence, this project combines techniques from image processing, machine lear
    - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。
 
      Load the TensorFlow model and label file, and initialize the webcam.
-3. __主循環：__
+3. __主循環The main loop：__
    - 延遲 5 秒以確保攝像頭準備就緒。
    
      Sleep for 5 seconds to ensure the webcam is ready.
@@ -74,7 +74,7 @@ In essence, this project combines techniques from image processing, machine lear
 This code implements the complete process of capturing images from a webcam, performing image classification, and interacting with ChatGPT.
 
 ---
-### 代碼說明
+### 代碼說明Code Explanation
 
 這段代碼主要由以下部分組成：
 
