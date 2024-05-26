@@ -50,9 +50,9 @@ In essence, this project combines techniques from image processing, machine lear
      Listen for keyboard input:
      - 如果按下 Enter 鍵，調用自定義的 Connet_ChatGPT 函數，並將分類結果傳遞給該函數。
 
-     If the Enter key is pressed, call the custom Connet_ChatGPT function with the classification result.
+       If the Enter key is pressed, call the custom Connet_ChatGPT function with the classification result.
      - 如果按下 Esc 鍵，退出循環並結束程式。
-
+     
      If the Esc key is pressed, exit the loop and end the program.
 4. __自定義函數 "Connet_ChatGPT"：__
    - 創建一個消息列表，並將用戶的問題添加到消息列表中。
