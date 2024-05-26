@@ -1,4 +1,4 @@
-# ChatGPT fruit information identification
+# ChatGPT fruit information identification (ChatGPT水果辨識器)
 
 這個專案是一個範例，展示了如何使用 Python 與多個人工智慧相關的庫（如 TensorFlow、OpenCV 和 OpenAI 的 ChatGPT）來實現幾個功能：
 
@@ -70,6 +70,7 @@ In essence, this project combines techniques from image processing, machine lear
      Release the webcam and close all windows.
 
 這段程式碼實現了從攝像頭獲取影像、進行圖像分類，並與 ChatGPT 互動的完整流程。
+
 This code implements the complete process of capturing images from a webcam, performing image classification, and interacting with ChatGPT.
 
 ---
