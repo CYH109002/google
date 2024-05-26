@@ -32,35 +32,51 @@ In essence, this project combines techniques from image processing, machine lear
      Sleep for 5 seconds to ensure the webcam is ready.
    - 從攝像頭讀取影像，並將其調整為模型所需的尺寸（224x224）。
 
-     Read images from the webcam in a loop.
+     Process the image: resize it to the required size (224x224), display it in a window, and preprocess it for classification.
    - 將處理後的影像顯示在窗口中。
 
-     Process the image: resize it to the required size (224x224), display it in a window, and preprocess it for classification.
+     Display the processed image in a window.
    - 將影像轉換為數組並預處理，以便進行分類。
 
-     Perform image classification using the TensorFlow model, obtain the classification result and confidence score.
+     Convert the image to an array and preprocess it for classification.
    - 使用 TensorFlow 模型進行圖像分類，並獲取分類結果和置信度。
+
+     Perform image classification using the TensorFlow model, obtain the classification result and confidence score.
    - 輸出分類結果和置信度。
+
+     Output the classification result and confidence score.
    - 監聽鍵盤輸入：
+
+     Listen for keyboard input:
    - 如果按下 Enter 鍵，調用自定義的 Connet_ChatGPT 函數，並將分類結果傳遞給該函數。
+
+     If the Enter key is pressed, call the custom Connet_ChatGPT function with the classification result.
    - 如果按下 Esc 鍵，退出循環並結束程式。
 
+     If the Esc key is pressed, exit the loop and end the program.
 4. __自定義函數 "Connet_ChatGPT"：__
    - 創建一個消息列表，並將用戶的問題添加到消息列表中。
+
+     Create a message list and add the user's question to it.
    - 使用 OpenAI API 向 ChatGPT 發送消息並獲取回應。
+
+     Use the OpenAI API to send the message to ChatGPT and retrieve the response.
    - 打印 ChatGPT 的回答。
 
-5. __清理:__
+     Print ChatGPT's response.
+5. __清理Cleanup:__
    - 釋放攝像頭並關閉所有窗口。
 
+     Release the webcam and close all windows.
 這段程式碼實現了從攝像頭獲取影像、進行圖像分類，並與 ChatGPT 互動的完整流程。
-
+This code implements the complete process of capturing images from a webcam, performing image classification, and interacting with ChatGPT.
 ---
 ### 代碼說明
 
 這段代碼主要由以下部分組成：
+This code consists of the following parts:
 
-1. **導入所需模組**：
+1. **導入所需模組Imports and Setup**：
    ```python
    import time
    import keyboard
@@ -70,7 +86,7 @@ In essence, this project combines techniques from image processing, machine lear
    from openai import OpenAI  # OpenAI 客戶端
    from ChatGPTAPI import Connet_ChatGPT  # 匯入自定義的 ChatGPT 函數
 
-2. __設定__:
+2. __設定Setup__:
    ```python
    np.set_printoptions(suppress=True)  # 禁用科學計數法以提高可讀性
    model = load_model("keras_Model.h5", compile=False)  # 加載模型
@@ -78,7 +94,7 @@ In essence, this project combines techniques from image processing, machine lear
    camera = cv2.VideoCapture(0)  # 設置攝像頭
 
 
-3. __主程式__:
+3. __主程式Main Program__:
    ```python
    time.sleep(5)  # 延遲 5 秒以確保攝像頭準備就緒
 
@@ -115,7 +131,7 @@ In essence, this project combines techniques from image processing, machine lear
    cv2.destroyAllWindows()  # 釋放攝像頭並關閉所有窗口
 
 
-4. __自定義函數__:
+4. __自定義函數Custom Function__:
    ```python
    from openai import OpenAI
    client = OpenAI()
