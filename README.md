@@ -6,14 +6,15 @@ This project serves as an example demonstrating how to utilize Python along with
 
 1. 從攝像頭中捕獲影像。Capturing images from a webcam.
 2. 使用已經訓練好的模型對捕獲的影像進行水果類別的分類。
+
    Performing fruit category classification on the captured images using a pre-trained model.
-4. 通過按下鍵盤上的特定按鍵（例如 Enter 鍵）與 OpenAI 的 ChatGPT 模型進行對話，並獲取有關水果的相關信息。
+3. 通過按下鍵盤上的特定按鍵（例如 Enter 鍵）與 OpenAI 的 ChatGPT 模型進行對話，並獲取有關水果的相關信息。
+
    Engaging in conversation with OpenAI's ChatGPT model by pressing specific keys on the keyboard (e.g., the Enter key) to retrieve relevant information about fruits.
 
 總體來說，這個專案結合了影像處理、機器學習和自然語言處理等技術，提供了一個有趣的示例，展示了如何將這些技術結合起來應用於實際應用中。
 
 ## 代碼Code
----
 ### 代碼簡介Code Overview
 
 1. __初始化與設置Imports and Setup：__
