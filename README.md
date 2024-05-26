@@ -10,6 +10,6 @@
    ```python
    from openai import OpenAI
 
--我好帥
--你好帥
--他好帥
+*我好帥
+*你好帥
+*他好帥
