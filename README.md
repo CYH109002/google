@@ -1,17 +1,18 @@
 # ChatGPT fruit information identification
 
-這是一個用於與 OpenAI 的 ChatGPT 模型進行對話的簡單 Python 函數範例。該函數會向 ChatGPT 發送一個有關水果的問題並打印回答。
+這是一個用於與 OpenAI 的 ChatGPT 模型進行對話的簡單 Python 函數範例。該函數會向 ChatGPT 發送一個有關水果的問題並打印回答。This is a simple Python function example for conversing with OpenAI's ChatGPT model. The function sends a question about fruits to ChatGPT and prints the response.
 
-## 代碼
+## 代碼Code
 
-這段程式碼結合了 TensorFlow、OpenCV 和 OpenAI 的 ChatGPT，用於從攝像頭獲取影像、進行圖像分類，並在按下 Enter 鍵時與 ChatGPT 進行對話。
+這段程式碼結合了 TensorFlow、OpenCV 和 OpenAI 的 ChatGPT，用於從攝像頭獲取影像、進行圖像分類，並在按下 Enter 鍵時與 ChatGPT 進行對話。This code combines TensorFlow, OpenCV, and OpenAI's ChatGPT for capturing images from a webcam, performing image classification, and engaging in conversation with ChatGPT upon pressing the Enter key.
 
-### 代碼簡介
+### 代碼簡介Code Overview
 
-1. __初始化與設置：__
-   - 匯入所需模組，設置 OpenAI 客戶端和自定義函數。
-   - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。
-  
+1. __初始化與設置Imports and Setup：__
+   - 匯入所需模組，設置 OpenAI 客戶端和自定義函數。Import necessary modules, set up the OpenAI client, and import the custom Connet_ChatGPT function.
+   - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。Load the TensorFlow model and label file, and initialize the webcam.
+
+
 2. __主循環：__
    - 延遲 5 秒以確保攝像頭準備就緒。
    - 從攝像頭讀取影像，並將其調整為模型所需的尺寸（224x224）。
