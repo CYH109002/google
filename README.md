@@ -18,6 +18,6 @@
 2. 有序列表項目 2
    1. 嵌套的有序列表項目
 
--ji3cl3jkl 1
--j3ijiji 2
--jfidl 3
+- ji3cl3jkl 1
+- j3ijiji 2
+- jfidl 3
