@@ -92,6 +92,21 @@
    cv2.destroyAllWindows()  # 釋放攝像頭並關閉所有窗口
 
 
-4. __初始化消息列表__:
+4. __自定義函數__:
    ```python
-   messages = []
+   from openai import OpenAI
+   client = OpenAI()
+
+   def Connet_ChatGPT(fruit_name):
+    print("")
+    messages = []
+    message = f"what is {fruit_name}"
+    messages.append({"role": "user", "content": message})
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages
+    )
+    desired_message = response.choices[0].message.content
+    print(f"This is {fruit_name}")
+    print(f"ChatGPT:{desired_message}")
+
