@@ -49,6 +49,7 @@ This code combines TensorFlow, OpenCV, and OpenAI's ChatGPT for capturing images
    - 釋放攝像頭並關閉所有窗口。
 
 這段程式碼實現了從攝像頭獲取影像、進行圖像分類，並與 ChatGPT 互動的完整流程。
+
 ---
 ### 代碼說明
 
