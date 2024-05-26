@@ -56,6 +56,7 @@
             time.sleep(3) 
         if keyboard_input == 27:  # Esc 鍵
             break  # 結束程式
+
    camera.release()
    cv2.destroyAllWindows()  # 釋放攝像頭並關閉所有窗口
 
