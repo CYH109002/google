@@ -4,6 +4,8 @@
 
 ## 代碼
 
+這段程式碼結合了 TensorFlow、OpenCV 和 OpenAI 的 ChatGPT，用於從攝像頭獲取影像、進行圖像分類，並在按下 Enter 鍵時與 ChatGPT 進行對話。以下是程式碼的詳細解釋：
+
 ### 代碼簡介
 
 1. __初始化與設置：__
