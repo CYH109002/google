@@ -14,6 +14,8 @@ This project serves as an example demonstrating how to utilize Python along with
 
 總體來說，這個專案結合了影像處理、機器學習和自然語言處理等技術，提供了一個有趣的示例，展示了如何將這些技術結合起來應用於實際應用中。
 
+In essence, this project combines techniques from image processing, machine learning, and natural language processing, providing an intriguing example of how these technologies can be integrated for practical applications.
+
 ## 代碼Code
 ### 代碼簡介Code Overview
 
