@@ -1,8 +1,12 @@
 # ChatGPT fruit information identification
 
-這是一個用於與 OpenAI 的 ChatGPT 模型進行對話的簡單 Python 函數範例。該函數會向 ChatGPT 發送一個有關水果的問題並打印回答。
+這個專案是一個範例，展示了如何使用 Python 與多個人工智慧相關的庫（如 TensorFlow、OpenCV 和 OpenAI 的 ChatGPT）來實現幾個功能：
 
-This is a simple Python function example for conversing with OpenAI's ChatGPT model. The function sends a question about fruits to ChatGPT and prints the response.
+1. 從攝像頭中捕獲影像。
+2. 使用已經訓練好的模型對捕獲的影像進行水果類別的分類。
+3. 通過按下鍵盤上的特定按鍵（例如 Enter 鍵）與 OpenAI 的 ChatGPT 模型進行對話，並獲取有關水果的相關信息。
+
+總體來說，這個專案結合了影像處理、機器學習和自然語言處理等技術，提供了一個有趣的示例，展示了如何將這些技術結合起來應用於實際應用中。
 
 ## 代碼Code
 
