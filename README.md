@@ -13,11 +13,7 @@ This project serves as an example demonstrating how to utilize Python along with
 總體來說，這個專案結合了影像處理、機器學習和自然語言處理等技術，提供了一個有趣的示例，展示了如何將這些技術結合起來應用於實際應用中。
 
 ## 代碼Code
-
-這段程式碼結合了 TensorFlow、OpenCV 和 OpenAI 的 ChatGPT，用於從攝像頭獲取影像、進行圖像分類，並在按下 Enter 鍵時與 ChatGPT 進行對話。
-
-This code combines TensorFlow, OpenCV, and OpenAI's ChatGPT for capturing images from a webcam, performing image classification, and engaging in conversation with ChatGPT upon pressing the Enter key.
-
+---
 ### 代碼簡介Code Overview
 
 1. __初始化與設置Imports and Setup：__
