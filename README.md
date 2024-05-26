@@ -23,12 +23,10 @@ In essence, this project combines techniques from image processing, machine lear
    - 匯入所需模組，設置 OpenAI 客戶端和自定義函數。
 
      Import necessary modules, set up the OpenAI client, and import the custom Connet_ChatGPT function.
-   - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。
+     - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。
 
      Load the TensorFlow model and label file, and initialize the webcam.
-
-
-2. __主循環：__
+3. __主循環：__
    - 延遲 5 秒以確保攝像頭準備就緒。
    - 從攝像頭讀取影像，並將其調整為模型所需的尺寸（224x224）。
    - 將處理後的影像顯示在窗口中。
@@ -39,12 +37,12 @@ In essence, this project combines techniques from image processing, machine lear
    - 如果按下 Enter 鍵，調用自定義的 Connet_ChatGPT 函數，並將分類結果傳遞給該函數。
    - 如果按下 Esc 鍵，退出循環並結束程式。
 
-3. __自定義函數 "Connet_ChatGPT"：__
+4. __自定義函數 "Connet_ChatGPT"：__
    - 創建一個消息列表，並將用戶的問題添加到消息列表中。
    - 使用 OpenAI API 向 ChatGPT 發送消息並獲取回應。
    - 打印 ChatGPT 的回答。
 
-4. __清理:__
+5. __清理:__
    - 釋放攝像頭並關閉所有窗口。
 
 這段程式碼實現了從攝像頭獲取影像、進行圖像分類，並與 ChatGPT 互動的完整流程。
