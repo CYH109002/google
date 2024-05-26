@@ -14,3 +14,10 @@
    ```python
    client = OpenAI()
 
+3. __定義函數 Connet_ChatGPT__:
+   ```python
+   def Connet_ChatGPT(fruit_name):
+
+4. __初始化消息列表__:
+   ```python
+   messages = []
