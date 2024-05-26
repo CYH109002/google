@@ -23,14 +23,22 @@ In essence, this project combines techniques from image processing, machine lear
    - 匯入所需模組，設置 OpenAI 客戶端和自定義函數。
 
      Import necessary modules, set up the OpenAI client, and import the custom Connet_ChatGPT function.
-     - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。
+   - 加載 TensorFlow 模型和標籤文件，初始化攝像頭。
 
      Load the TensorFlow model and label file, and initialize the webcam.
 3. __主循環：__
    - 延遲 5 秒以確保攝像頭準備就緒。
+   
+     Sleep for 5 seconds to ensure the webcam is ready.
    - 從攝像頭讀取影像，並將其調整為模型所需的尺寸（224x224）。
+
+     Read images from the webcam in a loop.
    - 將處理後的影像顯示在窗口中。
+
+     Process the image: resize it to the required size (224x224), display it in a window, and preprocess it for classification.
    - 將影像轉換為數組並預處理，以便進行分類。
+
+     Perform image classification using the TensorFlow model, obtain the classification result and confidence score.
    - 使用 TensorFlow 模型進行圖像分類，並獲取分類結果和置信度。
    - 輸出分類結果和置信度。
    - 監聽鍵盤輸入：
