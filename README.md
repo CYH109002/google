@@ -17,4 +17,9 @@
 1. 有序列表項目 1
 2. 有序列表項目 2
    1. 嵌套的有序列表項目
+
+2. __設定一個韓數值__:
+   ˋˋˋpython
+   print(f"This is {fruit_name}")
+print(f"ChatGPT: {desired_message}")
   
