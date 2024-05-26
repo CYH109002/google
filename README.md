@@ -16,13 +16,48 @@
    from openai import OpenAI  # OpenAI 客戶端
    from ChatGPTAPI import Connet_ChatGPT  # 匯入自定義的 ChatGPT 函數
 
-2. __初始化客戶端__:
+2. __設定__:
    ```python
-   client = OpenAI()
+   np.set_printoptions(suppress=True)  # 禁用科學計數法以提高可讀性
+   model = load_model("keras_Model.h5", compile=False)  # 加載模型
+   class_names = open("labels.txt", "r").readlines()  # 加載標籤
+   camera = cv2.VideoCapture(0)  # 設置攝像頭
 
-3. __定義函數 Connet_ChatGPT__:
+
+3. __主程式__:
    ```python
-   def Connet_ChatGPT(fruit_name):
+   time.sleep(5)  # 延遲 5 秒以確保攝像頭準備就緒
+   if __name__ == '__main__':
+    while True:
+        ret, image = camera.read()  # 從攝像頭讀取影像
+
+        # 處理影像
+        image = cv2.resize(image, (224, 224), interpolation=cv2.INTER_AREA)
+        cv2.imshow("Webcam Image", image)  # 顯示影像
+        image = np.asarray(image, dtype=np.float32).reshape(1, 224, 224, 3)
+        image = (image / 127.5) - 1  # 預處理影像數據
+        
+        # 進行圖像分類
+        prediction = model.predict(image)
+        index = np.argmax(prediction)
+        class_name = class_names[index]
+        confidence_score = prediction[0][index]
+        
+        # 輸出分類結果
+        print("Fruit:", class_name[2:], end="")  # 去掉標籤中的前兩個字符
+        print("Confidence Score:", str(np.round(confidence_score * 100))[:-2], "%")
+        fruit = class_name[2:]
+    
+        # 讀取鍵盤輸入
+        keyboard_input = cv2.waitKey(1)
+        if keyboard_input == 13:  # Enter 鍵
+            Connet_ChatGPT(class_name[2:])  # 與 ChatGPT 進行對話
+            time.sleep(3) 
+        if keyboard_input == 27:  # Esc 鍵
+            break  # 結束程式
+camera.release()
+cv2.destroyAllWindows()  # 釋放攝像頭並關閉所有窗口
+
 
 4. __初始化消息列表__:
    ```python
