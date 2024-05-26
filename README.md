@@ -19,7 +19,7 @@
    1. 嵌套的有序列表項目
 
 2. __設定一個函數值__:
-   ˋˋˋpython
+   ```python
    print(f"This is {fruit_name}")
    print(f"ChatGPT: {desired_message}")
   
