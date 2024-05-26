@@ -27,6 +27,7 @@
 3. __主程式__:
    ```python
    time.sleep(5)  # 延遲 5 秒以確保攝像頭準備就緒
+
    if __name__ == '__main__':
     while True:
         ret, image = camera.read()  # 從攝像頭讀取影像
@@ -55,8 +56,8 @@
             time.sleep(3) 
         if keyboard_input == 27:  # Esc 鍵
             break  # 結束程式
-camera.release()
-cv2.destroyAllWindows()  # 釋放攝像頭並關閉所有窗口
+   camera.release()
+   cv2.destroyAllWindows()  # 釋放攝像頭並關閉所有窗口
 
 
 4. __初始化消息列表__:
