@@ -6,10 +6,16 @@
 
 這段代碼主要由以下部分組成：
 
-1. **導入 OpenAI 模組**：
+1. **導入所需模組**：
    ```python
-   from openai import OpenAI
-   
+   import time
+   import keyboard
+   from keras.models import load_model  # 使用 TensorFlow 的 Keras 模型
+   import cv2  # OpenCV 用於圖像處理
+   import numpy as np  # 用於數據處理
+   from openai import OpenAI  # OpenAI 客戶端
+   from ChatGPTAPI import Connet_ChatGPT  # 匯入自定義的 ChatGPT 函數
+
 2. __初始化客戶端__:
    ```python
    client = OpenAI()
