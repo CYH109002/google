@@ -52,8 +52,8 @@ In essence, this project combines techniques from image processing, machine lear
 
        If the Enter key is pressed, call the custom Connet_ChatGPT function with the classification result.
      - 如果按下 Esc 鍵，退出循環並結束程式。
-     
-     If the Esc key is pressed, exit the loop and end the program.
+
+       If the Esc key is pressed, exit the loop and end the program.
 4. __自定義函數 "Connet_ChatGPT"：__
    - 創建一個消息列表，並將用戶的問題添加到消息列表中。
 
@@ -68,12 +68,15 @@ In essence, this project combines techniques from image processing, machine lear
    - 釋放攝像頭並關閉所有窗口。
 
      Release the webcam and close all windows.
+
 這段程式碼實現了從攝像頭獲取影像、進行圖像分類，並與 ChatGPT 互動的完整流程。
 This code implements the complete process of capturing images from a webcam, performing image classification, and interacting with ChatGPT.
+
 ---
 ### 代碼說明
 
 這段代碼主要由以下部分組成：
+
 This code consists of the following parts:
 
 1. **導入所需模組Imports and Setup**：
