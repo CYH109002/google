@@ -17,5 +17,5 @@
 2. 輸入`python --version`，如果安裝成功，你應該會看到已安裝的Python版本號。
 
 
-![替代文字](https://www.example.com/image.jpg)
+![](https://www.example.com/image.jpg)
 
