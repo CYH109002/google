@@ -153,3 +153,8 @@ This code consists of the following parts:
     print(f"This is {fruit_name}")
     print(f"ChatGPT:{desired_message}")
 
+| 標題1 | 標題2 | 標題3 |
+|-------|-------|-------|
+| 單元格1 | 單元格2 | 單元格3 |
+| 單元格4 | 單元格5 | 單元格6 |
+
