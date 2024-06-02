@@ -6,7 +6,7 @@
 2. 下載適用於Windows的最新版本的Python安裝程序（通常是一個`.exe`文件）。
 
 ![3 11 9](https://github.com/CYH109002/google/assets/129057021/83d78bc8-00d8-48eb-bd3b-e6add6d6e0ef)
-
+<img src="[example.jpg](https://github.com/CYH109002/google/assets/129057021/83d78bc8-00d8-48eb-bd3b-e6add6d6e0ef)" alt="Example Image" style="width:50%;">
 
 ### 運行安裝程序：
 
