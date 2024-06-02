@@ -144,9 +144,30 @@ cv2.destroyAllWindows()
 ---
 * 依照[此影片](https://youtu.be/g4CAdpK6Q7Q?t=181)設置環境
 
-![螢幕擷取畫面 2024-06-02 122542](https://github.com/CYH109002/google/assets/129057021/3cee5dbf-da1d-4f7e-a239-2ea3a069d7bf)
+<img src="https://github.com/CYH109002/google/assets/129057021/3cee5dbf-da1d-4f7e-a239-2ea3a069d7bf" alt="" style="width:65%;">
+
+---
+
+### 建立ChatGPT程式
+* 建立一個名為**ChatGPTAPI**的python程式 
+
+```python
+# 
+from openai import OpenAI
+client = OpenAI()
+
+def Connet_ChatGPT(fruit_name):
+    print("")
+    messages = []
+    message = f"what is {fruit_name}"
+    messages.append({"role": "user", "content": message})
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages
+    )
+    desired_message = response.choices[0].message.content
+    print(f"This is {fruit_name}")
+    print(f"ChatGPT:{desired_message}")
 
 
-
-
-
+```
