@@ -149,7 +149,7 @@ cv2.destroyAllWindows()
 ---
 
 ### 建立ChatGPT程式
-* 建立一個名為**ChatGPTAPI**的python程式 
+* 建立一個名為 **ChatGPTAPI** 的python程式 
 
 ```python
 # 
