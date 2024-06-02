@@ -16,6 +16,5 @@
 1. 打開命令提示符（Command Prompt）。
 2. 輸入`python --version`，如果安裝成功，你應該會看到已安裝的Python版本號。
 
-
-![](![3 11 9](https://github.com/CYH109002/google/assets/129057021/83d78bc8-00d8-48eb-bd3b-e6add6d6e0ef))
+![3 11 9](https://github.com/CYH109002/google/assets/129057021/83d78bc8-00d8-48eb-bd3b-e6add6d6e0ef)
 
