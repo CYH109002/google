@@ -6,7 +6,10 @@
 2. 下載適用於Windows的最新版本的Python安裝程序（通常是一個`.exe`文件）。
 
 ![3 11 9](https://github.com/CYH109002/google/assets/129057021/83d78bc8-00d8-48eb-bd3b-e6add6d6e0ef){ width=10% }
+<img src="[path/to/image.jpg](https://github.com/CYH109002/google/assets/129057021/83d78bc8-00d8-48eb-bd3b-e6add6d6e0ef)" alt="Description" style="width:50%;">
+
 ### 運行安裝程序：
+
 
 1. 雙擊下載的安裝程序。
 2. 勾選「Add Python to PATH」選項，這將允許你從命令行訪問Python。
