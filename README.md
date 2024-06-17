@@ -1,4 +1,4 @@
-# ChatGPT fruit information identification (ChatGPT水果辨識器)
+# ChatGPT fruit information identification
 ## 安裝Python
 ### 下載安裝包：
 
