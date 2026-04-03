@@ -171,14 +171,15 @@ def Connet_ChatGPT(fruit_name):
 
 
 ```
-## ▶️ Final Step
+### ▶️ 最後步驟
 
-Run the program:
+執行程式：
 
 python main.py
 
-After running:
-- The webcam will open
-- The system will detect fruits in real time
-- The predicted fruit will be displayed
-- A description will be generated using the OpenAI API
+執行後，系統會：
+
+- 開啟電腦攝影機  
+- 即時偵測畫面中的水果  
+- 顯示辨識出的水果名稱  
+- 透過 OpenAI API 生成該水果的介紹內容  
