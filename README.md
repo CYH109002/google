@@ -171,6 +171,7 @@ def Connet_ChatGPT(fruit_name):
 
 
 ```
+---
 ### ▶️ 最後步驟
 
 執行程式：
